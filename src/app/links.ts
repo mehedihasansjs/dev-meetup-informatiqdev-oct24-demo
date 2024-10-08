@@ -5,13 +5,11 @@ import { CredentialsComponent } from './credentials/credentials.component';
 export const links = [
   { name: 'Clipboard', url: 'clipboard', component: ClipboardComponent },
   { name: 'Badging', url: 'badging', component: BadgingComponent },
-  { name: 'Content Index', url: 'content-index', component: ClipboardComponent },
   { name: 'Credential Management', url: 'credential-management', component: CredentialsComponent },
   { name: 'Device Memory', url: 'device-memory', component: ClipboardComponent },
   { name: 'File Handling', url: 'file-handling', component: ClipboardComponent },
   { name: 'File System Access', url: 'file-system-access', component: ClipboardComponent },
   { name: 'File System Observer', url: 'file-system-observer', component: ClipboardComponent },
-  { name: 'Gamepad', url: 'gamepad', component: ClipboardComponent },
   { name: 'Navigation Preload', url: 'navigation-preload', component: ClipboardComponent },
   { name: 'Origin Private File System', url: 'origin-private-file-system', component: ClipboardComponent },
   { name: 'Payment Request', url: 'payment-request', component: ClipboardComponent },
