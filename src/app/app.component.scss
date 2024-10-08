@@ -1,0 +1,12 @@
+#anchor {
+  anchor-name: --tooltip-anchor;
+}
+
+#tooltip {
+  position-anchor: --tooltip-anchor;
+  left: anchor(left);
+  top: anchor(bottom);
+  // top: calc(anchor(bottom) + 10px); // 10px is the gap between the anchor and the tooltip
+  min-width: 300px;
+  margin: 0;
+}
