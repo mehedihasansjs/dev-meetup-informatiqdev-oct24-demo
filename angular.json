@@ -50,7 +50,8 @@
                   "maximumError": "4kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "serviceWorker": "ngsw-config.json"
             },
             "development": {
               "optimization": false,
@@ -69,6 +70,11 @@
             "development": {
               "buildTarget": "dev-meetup-informatiqdev-oct24-demo:build:development"
             }
+          },
+          "options": {
+            "sslKey": "ssl/server.key",
+            "sslCert": "ssl/server.crt",
+            "ssl": true
           },
           "defaultConfiguration": "development"
         },

@@ -1,11 +1,9 @@
-<div class="blogs">
-  @for (blog of blogs; track blog.id) {
-    <app-blog-card [blog]="blog"/>
+<div class="links">
+  @for (link of links; track link.url) {
+    <a [routerLink]="['/', link.url]" routerLinkActive="active">{{ link.name }}</a>
   }
 </div>
 
-<div class="sidebar">
-  @for (blog of blogs; track blog.id) {
-    <app-blog-card [blog]="blog"/>
-  }
+<div class="examples">
+  <router-outlet/>
 </div>

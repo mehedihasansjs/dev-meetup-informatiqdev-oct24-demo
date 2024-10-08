@@ -1,0 +1,23 @@
+<h2>Copy Text</h2>
+<input [(ngModel)]="text" type="text">
+<button (click)="copyText()">Copy Text</button>
+
+<br>
+<br>
+<br>
+<hr>
+<br>
+
+<h2>Copy Image</h2>
+<img #imageElement src="/images.jpeg">
+<button (click)="copyImage(imageElement)">Copy Image</button>
+
+<br>
+<br>
+<br>
+<hr>
+<br>
+
+<h2>Read Text</h2>
+<input [(ngModel)]="textFromClipboard" type="text">
+<button (click)="readText()">Read Text</button>
