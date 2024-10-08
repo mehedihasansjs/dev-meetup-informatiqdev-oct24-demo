@@ -1,38 +1,11 @@
-<div>
-  <h1>Default Behaviour</h1>
-  <button popovertarget="defaultPopover">Open popover element</button>
-
-  <div id="defaultPopover" popover>
-    <h1>Default Popover</h1>
-    <p>This is the default popover behaviour</p>
-  </div>
+<div class="blogs">
+  @for (blog of blogs; track blog.id) {
+    <app-blog-card [blog]="blog"/>
+  }
 </div>
 
-<hr>
-
-
-<div>
-  <h1>Anchor Positioning</h1>
-
-  <button id="anchor" popovertarget="tooltip">Show Tooltip</button>
-
-  <div id="tooltip" popover>
-    <p>This is the custom popover. Let's use it as tooltip!</p>
-  </div>
-</div>
-
-<hr>
-
-<div>
-  <h1>Dialog</h1>
-
-  <button (click)="dialog.show()">Show Dialog</button>
-  <button (click)="dialog.close('I can put any return value here')">hide Dialog</button>
-
-  <dialog #dialog (close)="onDialogClose($event)">
-    <h1>Dialog</h1>
-    <p>This is a dialog!</p>
-
-    <button (click)="dialog.close('Closing from dialog container')">Close</button>
-  </dialog>
+<div class="sidebar">
+  @for (blog of blogs; track blog.id) {
+    <app-blog-card [blog]="blog"/>
+  }
 </div>

@@ -1,9 +1,7 @@
-# Popover API
+# Container Queries
 
-The Popover API provides developers with a standard, consistent, flexible mechanism 
-for displaying popover content on top of other page content. Popover content can be 
-controlled either declaratively using HTML attributes, or via JavaScript.
+Container queries enable you to apply styles to an element based on the size of the element's container. If, for example, a container has less space available in the surrounding context, you can hide certain elements or use smaller fonts.
 
-Read More: https://developer.mozilla.org/en-US/docs/Web/API/Popover_API
+Container queries are an alternative to media queries, which apply styles to elements based on viewport size or other device characteristics.
 
-Read more about HTMLDialogElement: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
+Read More: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries

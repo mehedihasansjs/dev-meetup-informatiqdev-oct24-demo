@@ -1,0 +1,16 @@
+@if (blog(); as blog) {
+  <div class="blog">
+    <img class="image" [ngSrc]="blog.image" [alt]="blog.title" width="300" height="200">
+    <span class="view-count">
+      <iconify-icon icon="mdi:eye"></iconify-icon>
+      <span>{{ blog.views }}</span>
+    </span>
+    <h2 class="title">{{ blog.title }}</h2>
+    <p class="description">{{ blog.description }}</p>
+
+    <div class="author">
+      <img class="avatar" [ngSrc]="blog.author.avatar" [alt]="blog.author.name" width="460" height="460">
+      <h3 class="name">{{ blog.author.name }}</h3>
+    </div>
+  </div>
+}
