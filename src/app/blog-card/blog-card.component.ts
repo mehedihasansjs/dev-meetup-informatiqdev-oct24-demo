@@ -9,7 +9,7 @@ import { Blog } from '../blog';
     NgOptimizedImage,
   ],
   templateUrl: './blog-card.component.html',
-  styleUrl: './blog-card.component.scss',
+  styleUrl: './blog-card.component.css',
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class BlogCardComponent {
