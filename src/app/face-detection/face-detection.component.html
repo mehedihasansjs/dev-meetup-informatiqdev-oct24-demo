@@ -1,0 +1,19 @@
+<div class="picker">
+  <app-camera (pictureTaken)="onPictureTaken($event)"/>
+  <input type="file" (change)="onImageSelect($event)">
+</div>
+
+<br/>
+
+<img #face [src]="image" height="100"/>
+<button (click)="scan()">Scan</button>
+
+<br/>
+
+@if (!!detectedFace) {
+  <ul>
+    @for (f of detectedFace.landmarks; track f.type) {
+      <li>{{ f.type }} ({{ f.locations.length }})</li>
+    }
+  </ul>
+}
