@@ -1,3 +1,7 @@
+/**
+ * Learn more: https://developer.chrome.com/docs/capabilities/web-apis/file-system-access
+ */
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';

@@ -1,0 +1,18 @@
+<div class="picker">
+  <app-camera (pictureTaken)="onPictureTaken($event)"/>
+  <input type="file" (change)="onImageSelect($event)">
+</div>
+
+<br/>
+<img #barcode [src]="image" height="200">
+<button (click)="scan()">Scan</button>
+
+<br/>
+
+<h2>Barcode Value</h2>
+
+<ul>
+  @for (value of values; track value) {
+    <li>{{ value }}</li>
+  }
+</ul>
