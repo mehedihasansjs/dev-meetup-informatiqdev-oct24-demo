@@ -18,5 +18,4 @@ export const links = [
   { name: 'Shape Detection (Barcodes)', url: 'shape-detection-barcodes', component: BarcodeReaderComponent },
   { name: 'Shape Detection (Faces)', url: 'shape-detection-faces', component: FaceDetectionComponent },
   { name: 'Shape Detection (Texts)', url: 'shape-detection-texts', component: TextDetectionComponent },
-  { name: 'Bluetooth', url: 'bluetooth', component: ClipboardComponent }
 ];
