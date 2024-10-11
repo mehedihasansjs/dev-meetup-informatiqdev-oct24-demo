@@ -1,0 +1,9 @@
+<button type="button" (click)="openImageFilePicker()">Open Image File Picker</button> <br>
+<button type="button" (click)="openTextFilePicker()">Open Text File Picker</button> <br>
+<button type="button" (click)="createNewFile()">Create New File</button> <br>
+
+<hr>
+
+<h2>Read Text File</h2>
+<textarea [(ngModel)]="text" rows="10" cols="50"></textarea>
+<button type="button" (click)="save()">Save</button>
